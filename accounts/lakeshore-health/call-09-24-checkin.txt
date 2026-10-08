@@ -1,0 +1,16 @@
+SYNTHETIC DEMO DATA — every person and organisation here is made up. No patient data.
+
+Call: Lakeshore Health — monthly check-in
+Date: 24 Sep 2026 · 30 min · Zoom
+Lakeshore: Priya Shah, Dana Ruiz
+Cedar: Jordan Lee, Sam Ortiz
+
+[00:01] Priya: September report landed on the 19th and the counts match. Thank you.
+[00:04] Dana: Let's talk about next year. The flat fee is hard to defend. Could you price per statement instead?
+[00:06] Jordan: We can model that. I'll bring options.
+[00:08] Dana: To be transparent, procurement is running a market check on our patient-billing vendors. Nothing personal.
+[00:09] Jordan: Understood. Can we hold the QBR before the renewal?
+[00:10] Priya: We've been asking. Two were skipped this year.
+[00:14] Sam: Digital payments are up about six points since March — we'll lead the QBR with that.
+[00:15] Dana: That's a number I can use. Put it at the top.
+[00:28] Jordan: Recap: per-statement pricing options, QBR dates today, weekly status one more cycle.

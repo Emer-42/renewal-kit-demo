@@ -1,0 +1,18 @@
+SYNTHETIC DEMO DATA — every person and organisation here is made up. No patient data.
+
+Call: Lakeshore Health — intro with new VP Revenue Cycle
+Date: 14 Aug 2026 · 45 min · Zoom
+Lakeshore: Dana Ruiz (VP Revenue Cycle, joined July), Priya Shah (Patient Financial Services Manager)
+Cedar: Jordan Lee (Client Manager), Sam Ortiz (Client Analyst)
+
+[00:01] Jordan: Dana, welcome. We worked closely with Tom for three years, so we wanted to meet you early.
+[00:02] Dana: Thanks. Tom left in June and I inherited every revenue-cycle vendor at once. Honestly, I'm still deciding what stays.
+[00:05] Dana: Three priorities. Cost to collect. A monthly report I can read in five minutes. And one number I can show our CFO.
+[00:08] Priya: The monthly performance report is what my team uses. When it's on time, it's great.
+[00:09] Sam: We can put a one-page summary on top, led by the digital payment rate.
+[00:10] Dana: Do that. Our CFO reviews every vendor over $250K in November. You're on that list.
+[00:13] Dana: Your renewal is end of October, so the timing is tight.
+[00:15] Priya: Tom's deal included quarterly business reviews. We haven't had one since February.
+[00:16] Jordan: That's on us. We'll get one on the calendar.
+[00:20] Sam: Your EHR upgrade in July changed the statement data feed. We're adjusting our import.
+[00:40] Jordan: Recap: one-page summary, a QBR date, fix the feed import.
