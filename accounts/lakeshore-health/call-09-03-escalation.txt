@@ -1,0 +1,16 @@
+SYNTHETIC DEMO DATA — every person and organisation here is made up. No patient data.
+
+Call: Lakeshore Health — reporting escalation
+Date: 3 Sep 2026 · 30 min · Zoom
+Lakeshore: Priya Shah, Dana Ruiz (joined at minute 10)
+Cedar: Jordan Lee (Client Manager), Riley Chen (Reporting Ops)
+
+[00:01] Priya: The July report was eight days late. August arrived on time, but it says 61,200 statements went out. Our system says 74,800.
+[00:03] Riley: That's the feed change after your EHR upgrade. Our import dropped one of your four hospitals. We've found it.
+[00:04] Priya: Finance already used those numbers. I have to retract them.
+[00:10] Dana: (joins) Second month in a row. Who owns this on your side?
+[00:11] Jordan: I do. Riley owns the fix.
+[00:12] Dana: Weekly status until it's fixed, and a date.
+[00:13] Riley: Corrected August report by 12 September. Automated count check before every report by 20 September.
+[00:18] Dana: I'm presenting vendor value to the CFO in November. Months like this make that hard.
+[00:28] Jordan: Recap: corrected report 12 Sep, automated check 20 Sep, weekly status every Friday.

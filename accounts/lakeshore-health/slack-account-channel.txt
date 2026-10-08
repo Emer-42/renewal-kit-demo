@@ -1,0 +1,13 @@
+SYNTHETIC DEMO DATA — every person and organisation here is made up.
+#acct-lakeshore (internal) — Aug–Sep 2026
+
+[Aug 02] Sam Ortiz: July report still not out. Riley, anything blocking?
+[Aug 02] Riley Chen: Their EHR upgrade changed the statement feed. Import is choking.
+[Aug 09] Riley Chen: July report sent. 8 days late.
+[Aug 14] Jordan Lee: New VP Revenue Cycle (Dana) is cost-focused. Tom is gone. Treat this account as new.
+[Sep 12] Riley Chen: Corrected August report sent.
+[Sep 19] Riley Chen: Sept report on time. The count check caught 2 more feed issues. It's a script on my laptop for now — not in the pipeline.
+[Sep 23] Sam Ortiz: Lakeshore procurement asked for our SOC 2 report and an updated W-9. Why?
+[Sep 23] Jordan Lee: Usually means an RFP is coming. Dana called it a "market check".
+[Sep 25] Jordan Lee: Need per-statement pricing options before the renewal call. Who can own LKH-113?
+[Sep 25] Sam Ortiz: Can't this week — QBR prep for two other accounts.

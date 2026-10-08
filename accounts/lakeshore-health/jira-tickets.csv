@@ -1,0 +1,13 @@
+key,summary,status,priority,assignee,updated,labels
+LKH-101,Onboard 2026 statement templates,Done,Medium,Riley Chen,2026-01-12,onboarding
+LKH-102,Q1 QBR deck,Done,Medium,Sam Ortiz,2026-02-20,qbr
+LKH-104,Q2 QBR — schedule with client,Won't Do,Medium,,2026-05-28,qbr
+LKH-105,Payment portal SSO fix,Done,High,Riley Chen,2026-04-14,portal
+LKH-107,Q3 QBR — schedule with client,Won't Do,Medium,,2026-08-01,qbr
+LKH-108,July performance report late — root cause,Done,High,Riley Chen,2026-08-29,reporting
+LKH-109,Statement count wrong in August report (EHR feed change),Done,Highest,Riley Chen,2026-09-12,reporting;escalation
+LKH-110,Weekly status to Dana Ruiz until fix lands,In Progress,High,Jordan Lee,2026-09-26,escalation
+LKH-111,One-page summary on top of monthly report,In Review,Medium,Sam Ortiz,2026-09-22,reporting
+LKH-112,Automated statement-count check in the pipeline,Open,High,,2026-09-20,reporting
+LKH-113,Pricing options: per statement vs flat fee,Open,High,,2026-09-25,renewal
+LKH-114,Q4 QBR — schedule before renewal,Open,High,,2026-09-25,qbr;renewal

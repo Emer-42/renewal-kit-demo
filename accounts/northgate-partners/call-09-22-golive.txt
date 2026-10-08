@@ -1,0 +1,9 @@
+SYNTHETIC DEMO DATA — every person and organisation here is made up. No patient data.
+
+Call: Northgate Health Partners — go-live check · 22 Sep 2026
+Northgate: Lena Ortiz (Revenue Cycle Manager) · Cedar: Kim Patel (Client Manager)
+
+[00:01] Lena: Go-live slipped from August to October. Our IT team is behind on the payment-plan integration.
+[00:05] Lena: My CFO is asking why we're paying for a platform we're not fully using yet.
+[00:07] Kim: We can propose shifting the first billing period to match go-live.
+[00:09] Lena: That would help a lot. Please put it in writing.
