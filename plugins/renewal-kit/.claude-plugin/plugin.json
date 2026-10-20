@@ -1,7 +1,7 @@
 {
   "name": "renewal-kit",
   "version": "0.1.0",
-  "description": "Writes one-page pre-call renewal briefs for Cedar account managers from the account files and metrics script.",
+  "description": "Writes one-page pre-call renewal briefs for Cedar's account team (Jordan Lee, Kim Patel, Sam Ortiz, Riley Chen) from the account files and metrics script. Not for accounts outside the three in the kit, pricing or option analysis, or editing account data.",
   "author": {
     "name": "Emerson Hernandez",
     "email": "ehernandez@provectus.com"
