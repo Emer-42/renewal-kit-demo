@@ -1,0 +1,55 @@
+{
+  "account": "lakeshore-health",
+  "client": "Lakeshore Health",
+  "manager": "Jordan",
+  "numbers": {
+    "source": "scripts/metrics.py",
+    "window": "2026-06 → 2026-09",
+    "values": {
+      "statements_sent": {"first": 73400, "last": 75200, "low": 73400, "high": 75200},
+      "digital_payment_rate": {"first": 0.61, "last": 0.64, "low": 0.61, "high": 0.64},
+      "collection_rate": {"first": 0.73, "last": 0.74, "low": 0.69, "high": 0.74},
+      "psat": {"first": 83, "last": 84, "low": 80, "high": 84},
+      "support_calls": {"first": 3760, "last": 3580, "low": 3580, "high": 3820}
+    }
+  },
+  "sections": {
+    "At a glance": [
+      "Renews 31 Oct 2026: 1-year term, flat annual fee, 4% off list in exchange for quarterly business reviews.",
+      "Tom Becker, who signed every prior contract, left in June. Dana Ruiz (VP Revenue Cycle) is new and wants per-statement pricing.",
+      "Dana's CFO reviews vendors over $250K in November and Cedar is on the list; procurement is running a market check and asked for SOC 2 and W-9 (23 Sep).",
+      "Files end 26 Sep 2026."
+    ],
+    "Numbers": [
+      "Digital payment rate: 61% → 64% (+3 pts). Mar → Sep (--months 7) it is +6 pts, the figure Sam gave Dana on 24 Sep.",
+      "Collection rate: 73% → 74% (+1 pt), but 69% in July and 70% in August.",
+      "PSAT: 83 → 84 (+1 pt), but 80 in July.",
+      "Support calls: 3,760 → 3,580 (−4.8%). Statements sent: 73,400 → 75,200 (+2.5%)."
+    ],
+    "What went wrong": [
+      "July performance report was 8 days late after Lakeshore's EHR feed change (LKH-108).",
+      "August report counted 61,200 statements against 74,800 actual after one hospital was dropped; Finance had to retract its figures. Corrected 12 Sep (LKH-109).",
+      "Q2 and Q3 QBRs closed Won't Do (LKH-104, LKH-107); none held since February although the discount is tied to QBRs.",
+      "The count check promised as automated by 20 Sep is a script on Riley's laptop (LKH-112 still Open)."
+    ],
+    "Open issues": [
+      "LKH-112 | Automated statement-count check in the pipeline (promised 20 Sep) | no owner",
+      "LKH-113 | Pricing options: per statement vs flat fee (Jordan promised 24 Sep) | no owner",
+      "LKH-114 | Q4 QBR before renewal | no owner",
+      "LKH-110 | Weekly status to Dana Ruiz | Jordan Lee",
+      "LKH-111 | One-page summary on top of monthly report (In Review) | Sam Ortiz"
+    ],
+    "Risks": [
+      "Procurement's market check and the November CFO review decide the renewal, not the call. Ask Dana Ruiz what the market check covers, when it closes and what the CFO review needs from Cedar.",
+      "The 4% discount is tied to QBRs and two were skipped this year. Ask Priya Shah and Dana Ruiz to confirm a Q4 QBR date before 31 Oct (LKH-114).",
+      "Reporting credibility: the count check is still manual and unowned. Ask Riley Chen, before the call, for a date to move it into the pipeline (LKH-112)."
+    ],
+    "Gaps": [
+      "Annual fee, list price and any per-statement pricing.",
+      "Whether SOC 2 and W-9 were sent; scope and deadline of the market check.",
+      "Dates of the CFO review and the next call.",
+      "Cause of the July–August collection dip.",
+      "Anything after 26 Sep, including whether QBR dates went out."
+    ]
+  }
+}
