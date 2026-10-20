@@ -12,7 +12,6 @@ Every file starts with a `SYNTHETIC DEMO DATA` banner (HTML comment in `.md`, fi
 
 ```
 accounts/<slug>/
-  renewal-brief.md           # the deliverable: pre-call brief for the account manager (Lakeshore only so far)
   last-renewal-notes.md      # baseline terms, champion, risks from the previous renewal or signing
   metrics.csv
   jira-tickets.csv
@@ -38,14 +37,14 @@ Northgate's `last-renewal-notes.md` is really its signing notes. Other Cedar sta
 
 Commitments and customer asks live in call transcripts, status and ownership in Jira, numbers in `metrics.csv`, and contract terms in `last-renewal-notes.md`. A brief joins them, so a task usually means reading several of these and reconciling. They can disagree (e.g. Riley committed on 3 Sep to an automated count check by 20 Sep, but LKH-112 is still Open and unassigned).
 
-`accounts/lakeshore-health/renewal-brief.md` is the only worked example of the brief format:
+The brief format is defined by the `renewal-brief` skill (`.claude/skills/renewal-brief/SKILL.md`): exactly six `##` headings, in this order, verbatim:
 
-1. Header paragraph: renewal date, who changed, what's at stake.
-2. Numbers: window and source file stated, first → last month, and mid-period dips that the endpoints hide are called out.
-3. What went wrong: facts tied to ticket keys.
-4. Open issues table (ticket / issue / owner), with unowned items in bold.
-5. **Gaps (not in the files)**: unknowns are listed rather than guessed.
-6. Three asks for the next call, each naming a person and a concrete commitment.
+1. `## At a glance`: renewal date and term, who changed, what's at stake.
+2. `## Numbers`: window and source stated, latest month's value and first → last change for each rate, and mid-period dips that the endpoints hide are called out.
+3. `## What went wrong`: facts tied to ticket keys.
+4. `## Open issues`: table (ticket / issue / owner), with unowned items in bold.
+5. `## Risks`: three risks, each ending with the ask for the call: a named person and a concrete commitment.
+6. `## Gaps`: unknowns are listed rather than guessed.
 
 The files contain no contract fee, list price, or per-statement pricing. Don't invent any; list them under Gaps.
 
@@ -57,7 +56,7 @@ The files contain no contract fee, list price, or per-statement pricing. Don't i
 - **Numbers:** compute them from `metrics.csv`; never estimate. If something isn't in the files, list it under Gaps.
 - **Numbers source:** brief numbers come from `python3 scripts/metrics.py` (last 4 months per account, first → last change, low/high to expose dips; `--months N` widens the window). Cite the script and window in the brief.
 - **Open issues:** every one needs an owner, or **no owner** in bold.
-- **Ending:** 3 asks for the call, each with a name.
+- **Headings:** the six from the skill, verbatim and in order. `## Risks` ends with 3 asks for the call, each with a name.
 - **Data:** synthetic only.
 
 ## Known data inconsistency
