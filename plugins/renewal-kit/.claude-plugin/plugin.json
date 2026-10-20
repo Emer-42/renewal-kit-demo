@@ -1,7 +1,7 @@
 {
   "name": "renewal-kit",
-  "version": "0.1.0",
-  "description": "Renewal briefs for Cedar's account team: the acc-renewal-brief skill (synthetic demo data).",
+  "version": "0.2.0",
+  "description": "Renewal briefs for Cedar's account team: the acc-renewal-brief skill, the accounts/ guard hook and the fixed-layout render script (synthetic demo data).",
   "author": {
     "name": "Emerson Hernández"
   }
