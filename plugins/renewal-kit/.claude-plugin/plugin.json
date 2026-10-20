@@ -1,0 +1,9 @@
+{
+  "name": "renewal-kit",
+  "version": "0.1.0",
+  "description": "Writes one-page pre-call renewal briefs for Cedar account managers from the account files and metrics script.",
+  "author": {
+    "name": "Emerson Hernandez",
+    "email": "ehernandez@provectus.com"
+  }
+}
