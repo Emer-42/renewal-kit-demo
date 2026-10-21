@@ -1,6 +1,7 @@
 ---
 name: renewal-brief
 owner: Emer-42
+team: Cedar Account Team
 description: Use when asked for a renewal brief for an account in accounts/ (lakeshore-health, mercy-valley, northgate-partners); writes briefs/<account>.md from the account files and scripts/metrics.py, not for editing account data or pricing.
 ---
 <!-- SYNTHETIC DEMO DATA — every person and organisation here is made up. -->
@@ -8,6 +9,8 @@ description: Use when asked for a renewal brief for an account in accounts/ (lak
 # Renewal brief
 
 Write `briefs/<account>.md` for Jordan, the client manager, who reads it for five minutes before the renewal call. `<account>` is the folder name under `accounts/`.
+
+Run from the renewal-kit repo root. `accounts/`, `scripts/metrics.py` and `briefs/` are repo-relative and are not bundled with the plugin; if `scripts/metrics.py` or `accounts/<account>/` is missing, stop and say so instead of writing a brief.
 
 ## Steps
 

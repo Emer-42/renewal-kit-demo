@@ -8,6 +8,8 @@ description: Use when asked for a renewal brief for one of the accounts in accou
 
 Write `briefs/<account>.md` for Jordan, the client manager, who reads it for five minutes before the renewal call. `<account>` is the folder name under `accounts/`.
 
+Run from the renewal-kit repo root. `accounts/`, `scripts/metrics.py` and `briefs/` are repo-relative and are not bundled with the plugin; if `scripts/metrics.py` or `accounts/<account>/` is missing, stop and say so instead of writing a brief.
+
 ## Steps
 
 1. Read every file in `accounts/<account>/`: `last-renewal-notes.md`, `jira-tickets.csv`, every `call-*.txt`, and `slack-account-channel.txt` if present. Commitments live in the calls, status and ownership in Jira, terms in the notes.
