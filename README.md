@@ -6,11 +6,13 @@ This repo is the renewal kit from Session 2 plus the pieces Session 6 adds: a sk
 ## Before you start
 
 - Claude Code CLI (`claude --version`), `git`, `gh` logged in (`gh auth status`), `jq` (`brew install jq`; the hook refuses to run without it), Python 3.11+.
-- Work in your own copy, not the shared repo. Fork it or create a copy under your own account, then clone that:
+- Work in your own copy, not the shared repo. Create one from the template under your own account, with every checkpoint branch, and clone it:
 
   ```bash
-  gh repo fork Emer-42/renewal-kit-demo --clone --fork-name renewal-kit-demo
+  gh repo create renewal-kit-demo --template Emer-42/renewal-kit-demo --include-all-branches --private --clone
   ```
+
+  Your copy has no link to the shared repo, so the branches you push and the pull requests Claude opens stay in your copy. Don't fork: in a fork, `gh pr create` targets the parent repo by default.
 
 - Start Claude Code from the repo root: `cd renewal-kit-demo && claude`. Use Sonnet and Auto mode for the exercises; that is what the session used.
 
@@ -25,7 +27,7 @@ git fetch origin && git checkout -B main origin/ckpt/0 && git clean -fd
 | Checkpoint | What it holds | Start of |
 |---|---|---|
 | `ckpt/0` | the kit, `.claude/` additions, `scripts/check_briefs.py` | Exercises A and C |
-| `ckpt/1` | the renewal-brief skill copied into `plugins/renewal-kit/` (PR #1 merged) | Exercise D |
+| `ckpt/1` | the acc-renewal-brief skill copied into `plugins/renewal-kit/` (PR #1 merged) | Exercise D |
 | `ckpt/2` | `eh/lock-layout` updated from `ckpt/1`, with `scripts/render_brief.py` | Exercise D, render step |
 | `ckpt/3` | hook and render script inside the plugin (PR #2 merged), `briefs/` empty | Exercise E |
 
@@ -40,9 +42,9 @@ For Exercise D you also need the branch `eh/lock-layout` as it was before the up
 | `briefs/` | where briefs go |
 | `scripts/metrics.py` | the only source of numbers for a brief |
 | `scripts/check_briefs.py` | checks every brief's headings and numbers, writes `briefs/check-report.md` |
-| `.claude/skills/renewal-brief/SKILL.md` | the brief skill: six fixed headings |
+| `.claude/skills/acc-renewal-brief/SKILL.md` | the brief skill: six fixed headings |
 | `.claude/agents/skill-reviewer.md` | read-only Sonnet helper that reviews a skill change |
-| `.claude/commands/brief.md` | `/brief <account>`: user-invoked only |
+| `.claude/commands/acc-brief.md` | `/acc-brief <account>`: user-invoked only |
 | `.claude/settings.json`, `.claude/hooks/guard-accounts.sh` | PreToolUse hook: nothing writes under `accounts/` |
 
 ## The exercises
@@ -54,10 +56,10 @@ Paste each prompt as written. After each one, look at what Claude did, not only 
 Start: `ckpt/0`, on `main`.
 
 ```
-Make a branch eh/renewal-brief-plugin. Copy our renewal-brief skill into plugin layout under plugins/renewal-kit/ and keep the project skill. Header with name, owner and a one-line description. Commit, push, and open a draft pull request: what changed, why, and how to test it.
+Make a branch eh/renewal-brief-plugin. Copy our acc-renewal-brief skill into plugin layout under plugins/renewal-kit/ and keep the project skill. Header with name, owner and a one-line description. Commit, push, and open a draft pull request: what changed, why, and how to test it.
 ```
 
-Done when: the branch exists, `plugins/renewal-kit/skills/renewal-brief/SKILL.md` exists, `.claude/skills/renewal-brief/SKILL.md` is still there, and `gh` printed a draft PR URL. Notice you typed no git command.
+Done when: the branch exists, `plugins/renewal-kit/skills/acc-renewal-brief/SKILL.md` exists, `.claude/skills/acc-renewal-brief/SKILL.md` is still there, and `gh` printed a draft PR URL. Notice you typed no git command.
 
 ### B · Review, revise, merge
 
@@ -112,7 +114,7 @@ Done when: the PR contains `plugins/renewal-kit/hooks/hooks.json` (using `${CLAU
 Start: `ckpt/3` (`briefs/` is empty). Fresh session. Do not read ahead in the account files; the point is what the check finds.
 
 ```
-Brief all three accounts in parallel, one sub-agent per account on Sonnet, each using the renewal-brief skill and writing briefs/<account>.md. Return only the path and three risks.
+Brief all three accounts in parallel, one sub-agent per account on Sonnet, each using the acc-renewal-brief skill and writing briefs/<account>.md. Return only the path and three risks.
 ```
 
 Done when: three briefs exist (`ls -la briefs/`) and you have nine one-line risks. Then:
@@ -125,7 +127,7 @@ Done when: the first run fails on one brief, Claude fixes the brief (never the s
 
 ### Optional · Commands
 
-In a session: `/brief mercy-valley`. In a plain shell from the repo root: `claude -p "/brief northgate-partners"`. Look at `.claude/commands/brief.md`: the `!` line runs before Claude sees the prompt, `$ARGUMENTS` is what you typed, and `disable-model-invocation` means only you can start it.
+In a session: `/acc-brief mercy-valley`. In a plain shell from the repo root: `claude -p "/acc-brief northgate-partners"`. Look at `.claude/commands/acc-brief.md`: the `!` line runs before Claude sees the prompt, `$ARGUMENTS` is what you typed, and `disable-model-invocation` means only you can start it.
 
 ## If something goes wrong
 
@@ -133,3 +135,7 @@ In a session: `/brief mercy-valley`. In a plain shell from the repo root: `claud
 - Close any PR you opened: `gh pr close <n> --delete-branch`.
 - The hook needs `jq`; without it every edit is blocked on purpose.
 - Keep the `SYNTHETIC DEMO DATA` banner on any file you add.
+
+### If `/acc-brief` does something unexpected
+
+Run `/skills` and check which `acc-brief` and `acc-renewal-brief` resolve to. A personal skill (`~/.claude/skills/`) with the same name overrides the repo's. Rename yours or ours.

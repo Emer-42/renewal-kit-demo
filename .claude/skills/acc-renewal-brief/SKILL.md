@@ -1,5 +1,5 @@
 ---
-name: renewal-brief
+name: acc-renewal-brief
 description: Use when asked for a renewal brief for one of the accounts in accounts/ (lakeshore-health, mercy-valley, northgate-partners). Writes briefs/<account>.md for Jordan, the client manager, from the account files and scripts/metrics.py.
 ---
 <!-- SYNTHETIC DEMO DATA — every person and organisation here is made up. -->
