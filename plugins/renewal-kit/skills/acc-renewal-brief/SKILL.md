@@ -1,11 +1,14 @@
 ---
 name: acc-renewal-brief
-description: Use when asked for a renewal brief for one of the accounts in accounts/ (lakeshore-health, mercy-valley, northgate-partners). Writes briefs/<account>.md for Jordan, the client manager, from the account files and scripts/metrics.py.
+description: Write the renewal brief briefs/<account>.md for one account in accounts/ (lakeshore-health, mercy-valley, northgate-partners) from its call notes, Jira export, prior-renewal notes and scripts/metrics.py. Use when someone asks for a renewal brief or pre-call brief for one of these accounts; works only from the renewal-kit repo root. Do not use for accounts outside accounts/, for QBRs, onboarding or status summaries, for pricing or proposal questions, or for editing account data.
 owner: Emerson Hernández
+team: Client Analytics
 ---
 <!-- SYNTHETIC DEMO DATA — every person and organisation here is made up. -->
 
 # Renewal brief
+
+Run from the renewal-kit repo root: `scripts/metrics.py`, `accounts/` and `briefs/` are repo-relative and not bundled with this plugin. If they are missing, stop and say so.
 
 Write `briefs/<account>.md` for Jordan, the client manager, who reads it for five minutes before the renewal call. `<account>` is the folder name under `accounts/`.
 

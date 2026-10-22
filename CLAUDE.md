@@ -37,7 +37,7 @@ Northgate's `last-renewal-notes.md` is really its signing notes. Other Cedar sta
 
 Commitments and customer asks live in call transcripts, status and ownership in Jira, numbers in `metrics.csv`, and contract terms in `last-renewal-notes.md`. A brief joins them, so a task usually means reading several of these and reconciling. They can disagree (e.g. Riley committed on 3 Sep to an automated count check by 20 Sep, but LKH-112 is still Open and unassigned).
 
-The brief format is defined by the `acc-renewal-brief` skill (`.claude/skills/acc-renewal-brief/SKILL.md`): exactly six `##` headings, in this order, verbatim:
+The brief format is defined by the `acc-renewal-brief` skill. The canonical copy is the plugin's (`plugins/renewal-kit/skills/acc-renewal-brief/SKILL.md`); `.claude/skills/acc-renewal-brief/SKILL.md` is kept for project use and `/acc-brief`, and any change to the sections or rules goes into both. Exactly six `##` headings, in this order, verbatim:
 
 1. `## At a glance`: renewal date and term, who changed, what's at stake.
 2. `## Numbers`: window and source stated, latest month's value and first → last change for each rate, and mid-period dips that the endpoints hide are called out.

@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Renewal briefs for Cedar's account team: the acc-renewal-brief skill (synthetic demo data).",
   "author": {
-    "name": "Emerson Hernández"
-  }
+    "name": "Emerson Hernández",
+    "email": "ehernandez@provectus.com"
+  },
+  "homepage": "https://github.com/Emer-42/renewal-kit-demo/tree/main/plugins/renewal-kit",
+  "repository": "https://github.com/Emer-42/renewal-kit-demo"
 }
